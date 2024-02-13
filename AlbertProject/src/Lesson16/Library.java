@@ -14,12 +14,11 @@ public class Library {
     public void start(){
         getBooks();
         getReaders(5);
-
         for (int i = 0; i < 10; i++) {
             if(books.size() > 0) getRandomReader().getBook(getRandomBook());
             else System.out.println("Книги кончились!");
         }
-
+        System.out.println("\n-------------------------------------------------------------\n");
         for (int i = 0; i < 10; i++) {
             Reader reader = getRandomReader();
             if(reader.myBooks.size() > 0){

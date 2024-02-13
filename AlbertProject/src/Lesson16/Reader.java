@@ -13,12 +13,12 @@ public class Reader {
     public void getBook(Book book){
         myBooks.add(book);
         library.books.remove(book);
-        System.out.println(name + " взял книгу " + book.title + ", автора: " + book.author);
+        System.out.println(name + " взял книгу " + book.title + ". Автор: " + book.author);
     }
     public void returnBook(Book book){
         library.books.add(book);
         myBooks.remove(book);
-        System.out.println(name + " вернул книгу " + book.title + ", автора: " + book.author);
+        System.out.println(name + " вернул книгу " + book.title + ". Автора: " + book.author);
     }
     public Book getRandomBook(){
         return myBooks.get((int)(Math.random() * myBooks.size()));
